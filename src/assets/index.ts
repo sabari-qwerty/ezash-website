@@ -24,4 +24,4 @@ export const Instagram = instagram
 
 // atom for exmple
 
-export const Autom = atom
+export const Autom = discord
