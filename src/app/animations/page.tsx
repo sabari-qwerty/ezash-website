@@ -1,8 +1,7 @@
 import React from "react";
-import ScrollToNextSection from "../../../components/test";
 
 const page = () => {
-  return <ScrollToNextSection />;
+  return <>HELLO</>;
 };
 
 export default page;
