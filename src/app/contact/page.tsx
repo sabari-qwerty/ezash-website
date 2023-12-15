@@ -11,7 +11,7 @@ const page = () => {
             Contact Me
           </h1>
           <p className="lg:text-xl text-lg font-medium text-white">
-            Let's Work Together
+            Let&apos;s Work Together
           </p>
           <p className="lg:text-lg text-base text-white">
             If you d like to discuss a project or ask me any questions, feel
