@@ -7,22 +7,22 @@ import { FC } from "react";
 
 const data = [
   {
-    text: "Graphics & UI/UX Designs",
+    text: "Graphics &amp UI/UX Designs",
     className: "glow:hue-rotate-30 glow:saturate-200",
     link: "/graphic",
   },
   {
-    text: "3D Modeling & Animation",
+    text: "3D Modeling &amp Animation",
     className: "glow:hue-rotate-90 glow:saturate-200",
     link: "/modeling",
   },
   {
-    text: "Video editing & 2D animations",
+    text: "Video editing &amp 2D animations",
     className: "glow:-hue-rotate-30 glow:saturate-100 ",
     link: "/animations",
   },
   {
-    text: "Game & VR Development",
+    text: "Game &amp VR Development",
     className: "glow:-hue-rotate-90 glow:saturate-150",
     link: "/game",
   },

@@ -15,8 +15,8 @@ const page = () => {
                 Hi, my name is Ezash and I am a 3D artist and graphic designer
                 with over 3 years of experience in the field. I am passionate
                 about creating stunning visuals that bring ideas to life.
-                Whether it's a product, a character, or an environment, I strive
-                to deliver high-quality work that exceeds expectations. I
+                Whether it&apos;s a product, a character, or an environment, I
+                strive to deliver high-quality work that exceeds expectations. I
                 believe that attention to detail and a strong work ethic are
                 essential to producing great results. Thank you for visiting my
                 portfolio and I hope to have the opportunity to work with you!
