@@ -42,10 +42,7 @@ export const Portfolio: FC = () => {
             <GlowCapture key={key}>
               <Glow>
                 <div
-                  className={
-                    "min-h-[500px] min-w-[320px]  bg-transparent    bg-[#2E2F34] glow:bg-red-700/20 glow:border-red-700 border rounded-xl text-white flex  flex-col space-y-8 border-white/10" +
-                    data.className
-                  }
+                  className={`min-h-[500px] min-w-[320px]  bg-transparent    bg-[#2E2F34] glow:bg-red-700/20 glow:border-red-700 border rounded-xl text-white flex  flex-col space-y-8 border-white/10 ${data.className}`}
                 >
                   <div className="flex justify-center items-center">
                     <Autom className="text-9xl glow:text-glow/50" />
