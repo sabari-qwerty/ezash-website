@@ -6,6 +6,7 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import "./style.css";
 import "swiper/css";
 import "swiper/css/pagination";
+import { SectionLayout } from "../sectionLayout";
 
 export const GraohicMainPage: FC = () => {
   return (
@@ -21,7 +22,14 @@ export const GraohicMainPage: FC = () => {
         modules={[Mousewheel, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>
+          <SectionLayout className="w-full h-[100dvh] flex justify-center items-center">
+            <h1 className="lg:text-6xl text-4xl font-bold text-white">
+              Graphics and UI/UX Designs
+            </h1>
+          </SectionLayout>
+        </SwiperSlide>
+
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>

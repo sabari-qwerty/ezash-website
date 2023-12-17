@@ -30,7 +30,7 @@ export const Portfolio = () => {
   return (
     <section className="py-16  bg-[#34353A] ">
       <div className="mx-auto w-[90%] flex justify-center items-center flex-col space-y-8">
-        <h2 className="text-white font-extrabold text-4xl">Portfolio </h2>
+        <h2 className="text-white font-bold text-4xl">Portfolio </h2>
         <p className="text-center font-light text-white text-lg">
           I&apos;m a paragraph. Click here to add your <br /> own text and edit
           me. It&apos;s easy.
