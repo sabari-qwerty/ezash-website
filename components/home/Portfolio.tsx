@@ -1,7 +1,6 @@
 "use client";
-import { Autom } from "@/assets";
-import { Glow, GlowCapture } from "@codaworks/react-glow";
-import Link from "next/link";
+
+import { HeroCard } from "../card/HeroCard";
 
 const data = [
   {
@@ -29,36 +28,18 @@ const data = [
 export const Portfolio = () => {
   return (
     <section className="py-16  bg-[#34353A] ">
-      <div className="mx-auto w-[90%] flex justify-center items-center flex-col space-y-8">
+      <div className="mx-auto w-[90%] flex justify-center items-center flex-col space-y-5">
         <h2 className="text-white font-bold text-4xl">Portfolio </h2>
         <p className="text-center font-light text-white text-lg">
           I&apos;m a paragraph. Click here to add your <br /> own text and edit
           me. It&apos;s easy.
         </p>
         <div className="grid grid-cols-4 gap-5">
-          {data.map((data, key) => (
-            <GlowCapture key={key}>
+          <HeroCard />
+          <HeroCard />
 
-              <Glow>
-                <div
-                  className={`min-h-[500px] min-w-[320px]  bg-transparent    bg-[#2E2F34] glow:bg-red-700/20 glow:border-red-700 border rounded-xl text-white flex  flex-col space-y-8 border-white/10 `}
-                >
-                  <div className="flex justify-center items-center">
-                    <Autom className="text-9xl glow:text-glow/50" />
-                  </div>
-                  <span className=" glow:text-glow/50 text-white text-xl  text-center">
-                    {data.text}
-                  </span>
-                  <Link
-                    href={data.link}
-                    className=" glow:bg-[#FC1D53] hue-rotate-60 glow:border-green-300/80 glow:text-slate-800 h-10 w-4/5 mx-auto bg-black flex justify-center items-center "
-                  >
-                    View More
-                  </Link>
-                </div>
-              </Glow>
-            </GlowCapture>
-          ))}
+          <HeroCard />
+          <HeroCard />
         </div>
       </div>
     </section>
