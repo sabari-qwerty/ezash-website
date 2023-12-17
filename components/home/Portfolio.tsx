@@ -40,24 +40,27 @@ export const Portfolio: FC = () => {
         <div className="grid grid-cols-4 gap-5">
           {data.map((data, key) => (
             <GlowCapture key={key}>
-              <Glow>
-                <div
-                  className={`min-h-[500px] min-w-[320px]  bg-transparent    bg-[#2E2F34] glow:bg-red-700/20 glow:border-red-700 border rounded-xl text-white flex  flex-col space-y-8 border-white/10 `}
-                >
-                  <div className="flex justify-center items-center">
-                    <Autom className="text-9xl glow:text-glow/50" />
-                  </div>
-                  <span className=" glow:text-glow/50 text-white text-xl  text-center">
-                    {data.text}
-                  </span>
-                  <Link
-                    href={data.link}
-                    className=" glow:bg-[#FC1D53] hue-rotate-60 glow:border-green-300/80 glow:text-slate-800 h-10 w-4/5 mx-auto bg-black flex justify-center items-center "
+              {
+                // @ts-ignore
+                <Glow>
+                  <div
+                    className={`min-h-[500px] min-w-[320px]  bg-transparent    bg-[#2E2F34] glow:bg-red-700/20 glow:border-red-700 border rounded-xl text-white flex  flex-col space-y-8 border-white/10 `}
                   >
-                    View More
-                  </Link>
-                </div>
-              </Glow>
+                    <div className="flex justify-center items-center">
+                      <Autom className="text-9xl glow:text-glow/50" />
+                    </div>
+                    <span className=" glow:text-glow/50 text-white text-xl  text-center">
+                      {data.text}
+                    </span>
+                    <Link
+                      href={data.link}
+                      className=" glow:bg-[#FC1D53] hue-rotate-60 glow:border-green-300/80 glow:text-slate-800 h-10 w-4/5 mx-auto bg-black flex justify-center items-center "
+                    >
+                      View More
+                    </Link>
+                  </div>
+                </Glow>
+              }
             </GlowCapture>
           ))}
         </div>
