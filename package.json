@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@codaworks/react-glow": "^1.0.4",
+    "@codaworks/react-glow": "^1.0.1",
     "clsx": "^2.0.0",
     "gasp": "^0.0.2",
     "gsap": "^3.12.3",
