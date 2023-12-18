@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./card.css";
+import Link from "next/link";
 
 interface prop {
   url?: string;
@@ -7,16 +8,20 @@ interface prop {
   heroImage?: string;
 }
 
-export const HeroCard: FC = () => {
+export const HeroCard: FC<prop> = ({
+  url = "\\",
+  backgroundImage,
+  heroImage,
+}) => {
   return (
-    <a href="https://www.mythrillfiction.com/the-dark-rider" target="_blank">
+    <Link href={url}>
       <div className="card">
         <div className="wrapper">
-          <img src="/card/back__.png" className="cover-image" />
+          <img src={backgroundImage} className="cover-image" />
         </div>
 
-        <img src="/card/13 (4).png" className="character" />
+        <img src={heroImage} className="character" />
       </div>
-    </a>
+    </Link>
   );
 };

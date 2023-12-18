@@ -4,24 +4,24 @@ import { HeroCard } from "../card/HeroCard";
 
 const data = [
   {
-    text: "Graphics &amp UI/UX Designs",
-    className: "glow:hue-rotate-30 glow:saturate-200",
-    link: "/graphic",
+    backgroundImage: "/card/2db.png",
+    heroImage: "/card/2df.png",
+    url: "/graphic",
   },
   {
-    text: "3D Modeling &amp Animation",
-    className: "glow:hue-rotate-90 glow:saturate-200",
-    link: "/modeling",
+    backgroundImage: "/card/3db.png",
+    heroImage: "/card/3df.png",
+    url: "/modeling",
   },
   {
-    text: "Video editing &amp 2D animations",
-    className: "glow:-hue-rotate-30 glow:saturate-100 ",
-    link: "/animations",
+    backgroundImage: "/card/vidb.png",
+    heroImage: "/card/vidf.png",
+    url: "/game",
   },
   {
-    text: "Game &amp VR Development",
-    className: "glow:-hue-rotate-90 glow:saturate-150",
-    link: "/game",
+    backgroundImage: "/card/vrb.png",
+    heroImage: "/card/vrf.png",
+    url: "/animations",
   },
 ];
 
@@ -35,11 +35,14 @@ export const Portfolio = () => {
           me. It&apos;s easy.
         </p>
         <div className="grid grid-cols-4 gap-5">
-          <HeroCard />
-          <HeroCard />
-
-          <HeroCard />
-          <HeroCard />
+          {data.map((data, key) => (
+            <HeroCard
+              key={key}
+              backgroundImage={data.backgroundImage}
+              heroImage={data.heroImage}
+              url={data.url}
+            />
+          ))}
         </div>
       </div>
     </section>

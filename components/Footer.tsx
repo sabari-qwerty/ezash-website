@@ -32,7 +32,7 @@ export const Footer: FC = () => {
               href={data.link}
               target="_blank"
               key={key}
-              className=" min-w-[160px] flex rounded-lg justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#FFA600] text-[#fff] hover:text-gray-700 "
+              className=" min-w-[160px] flex rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#FFA600] text-[#fff] hover:text-gray-700 "
             >
               {data.icon && <span className="text-2xl">{data.icon}</span>}
               <span className="text-xl">{data.label}</span>
@@ -45,7 +45,7 @@ export const Footer: FC = () => {
               href={data.link}
               target="_blank"
               key={key}
-              className="flex  min-w-[160px] rounded-lg justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#FFA600] text-[#fff] hover:text-gray-700 "
+              className="flex  min-w-[160px] rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#FFA600] text-[#fff] hover:text-gray-700 "
             >
               {data.icon && <span className="text-2xl">{data.icon}</span>}
               <span className="text-xl">{data.label}</span>
