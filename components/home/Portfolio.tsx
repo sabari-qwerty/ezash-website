@@ -9,7 +9,7 @@ const data = [
     url: "/graphic",
   },
   {
-    backgroundImage: "/card/3db.png",
+    backgroundImage: "/card/3dB.png",
     heroImage: "/card/3df.png",
     url: "/modeling",
   },
