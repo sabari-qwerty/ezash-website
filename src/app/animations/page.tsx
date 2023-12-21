@@ -1,7 +1,8 @@
 import React from "react";
+import { Model } from "../../../components/model";
 
 const page = () => {
-  return <>HELLO</>;
+  return <></>;
 };
 
 export default page;

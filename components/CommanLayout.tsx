@@ -12,7 +12,7 @@ export const CommanLayout: FC<prop> = ({ children, className }) => {
   return (
     <main
       className={cn(
-        ` mx-auto  w-full min-h-[100dvh] overflow-auto scrollbar-hide py-8 relative  flex flex-col  ${className}`
+        ` mx-auto  w-full min-h-[100dvh] overflow-auto scrollbar-hide  relative  flex flex-col  ${className}`
       )}
     >
       <NavBar />

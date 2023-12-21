@@ -76,3 +76,15 @@ body {
   border: 2px solid #fff;
   background-color: #000;
 }
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: orange !important;
+}
+
+.zindex {
+  z-index: 100000000 !important;
+}

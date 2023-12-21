@@ -1,17 +1,11 @@
-"use client";
 import { FC } from "react";
-import { ActiveLink } from "./ActiveLink";
 import cn from "../utility/css/cn";
-import { usePathname } from "next/navigation";
+import { ActiveLink } from "./ActiveLink";
 
 interface prop {
   className?: string;
 }
-
-export const NavBar: FC<prop> = ({ className }) => {
-  const path = usePathname();
-
-  console.log("/modeling" in ["/modeling"]);
+export const SectionNavBar: FC<prop> = ({ className }) => {
   const NavBarContent = [
     {
       lable: "Home",
@@ -27,16 +21,10 @@ export const NavBar: FC<prop> = ({ className }) => {
     },
   ];
   return (
-    <div
-      className={`w-full  justify-center items-center    ${
-        ["/graphic", "/modeling", "/game", "/animations"].includes(path)
-          ? "hidden"
-          : "flex"
-      } `}
-    >
+    <div className={`w-full  justify-center items-center     flex `}>
       <nav
         className={cn(
-          `w-full mx-auto flex justify-center space-x-16 absolute top-0 py-8  z-50 bg-[#2e2f34]   ${className}`
+          `w-full mx-auto flex justify-center space-x-16 absolute top-0 py-8   z-50   ${className}`
         )}
       >
         {NavBarContent.map((data, key) => (
