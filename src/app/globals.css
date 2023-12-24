@@ -88,3 +88,11 @@ body {
 .zindex {
   z-index: 100000000 !important;
 }
+
+.swiper-button-prev {
+  color: #ce8703 !important ;
+}
+
+.swiper-button-next {
+  color: #ce8703 !important ;
+}

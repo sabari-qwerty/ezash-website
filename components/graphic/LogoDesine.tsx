@@ -24,11 +24,11 @@ export const LogoDesine: FC = () => {
     // @ts-ignore
     document.querySelectorAll(".swiper")[1].swiper.slideNext();
   };
-
+  // bg-[#2e2f34]
   return (
-    <SectionLayout className=" w-full relative  bg-[#2e2f34] flex flex-col ">
-      <div className=" w-full h-full   bg-black">
-        <SwiperSlide_ className="w-full h-full bg-slate-600 ">
+    <SectionLayout className=" w-full relative    flex flex-col ">
+      <div className=" w-full h-full    ">
+        <SwiperSlide_ className="w-full h-full   ">
           <SwiperSlide
             style={{
               background: "#34353A",
@@ -59,7 +59,7 @@ export const LogoDesine: FC = () => {
                 alignItems: "center",
               }}
             >
-              <div className="w-full h-full flex justify-center items-center  ">
+              <div className="w-full h-full flex justify-center items-center   ">
                 <div className="w-3/4 h-3/4 grid grid-cols-2 gap-2">
                   <div className="w-full h-full bg-white">
                     <Image
@@ -100,7 +100,6 @@ export const LogoDesine: FC = () => {
           ))}
         </SwiperSlide_>
       </div>
-      <div className="w-full h-"> </div>
     </SectionLayout>
   );
 };

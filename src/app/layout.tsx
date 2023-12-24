@@ -14,9 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={""}>
-        <CommanLayout>{children}</CommanLayout>
-      </body>
+      <body className={""}>{children}</body>
     </html>
   );
 }

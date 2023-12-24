@@ -1,23 +1,17 @@
 "use client";
-import { FC, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { FC } from "react";
 import { Mousewheel, Pagination } from "swiper/modules";
-
-import "./style.css";
-import "swiper/css";
-import "swiper/css/pagination";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { GraphicDesineHeroPage } from "../graphic/GraphicDesineHeroPage";
+import { LogoDesine } from "../graphic/LogoDesine";
 import { SectionLayout } from "../sectionLayout";
-
-import { GraphicDesineHeroPage } from "./GraphicDesineHeroPage";
-import { LogoDesine } from "./LogoDesine";
-import { BrochureSlider } from "./Brochure";
-import { ScoialMediaPostes } from "./scoialMediaPostes";
-import { PackageDesignSipwer } from "./packagedesign";
-import { CardDesignSipwer } from "./cardDesine";
-import { UiUxDesignSipwer } from "./uiux";
-import { IllustrationDesign } from "./illustration";
 import { Discord, Google, Instagram, Telegram, Whatsapp } from "@/assets";
 import cn from "../../utility/css/cn";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import { HeroPage } from "./HeroPage";
+import { Portfolio } from "./Portfolio";
 
 const Contact = [
   { icon: <Whatsapp />, link: "", label: "+91 90800 78315" },
@@ -27,8 +21,7 @@ const Contact = [
   { icon: false, link: "", label: "Contact" },
   { icon: <Discord />, link: "", label: "ezash#0632" },
 ];
-export const GraohicMainPage: FC = () => {
-  const [showPop, setShowPop] = useState(false);
+export const HomePageSwiper: FC = () => {
   return (
     <>
       <Swiper
@@ -43,40 +36,13 @@ export const GraohicMainPage: FC = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <GraphicDesineHeroPage />
+          <HeroPage />
         </SwiperSlide>
 
         <SwiperSlide>
-          <LogoDesine />
+          <Portfolio />
         </SwiperSlide>
-        <SwiperSlide>
-          <BrochureSlider />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SectionLayout>
-            <ScoialMediaPostes />
-          </SectionLayout>
-        </SwiperSlide>
-        <SwiperSlide>
-          <SectionLayout>
-            <PackageDesignSipwer />
-          </SectionLayout>
-        </SwiperSlide>
-        <SwiperSlide>
-          <SectionLayout>
-            <CardDesignSipwer />
-          </SectionLayout>
-        </SwiperSlide>
-        <SwiperSlide>
-          <SectionLayout>
-            <UiUxDesignSipwer />
-          </SectionLayout>
-        </SwiperSlide>
-        <SwiperSlide>
-          <SectionLayout>
-            <IllustrationDesign />
-          </SectionLayout>
-        </SwiperSlide>
+
         <SwiperSlide>
           <SectionLayout
             className="w-full h-full flex

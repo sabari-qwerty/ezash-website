@@ -27,7 +27,7 @@ const data = [
 
 export const Portfolio = () => {
   return (
-    <section className="py-16  bg-[#34353A] ">
+    <section className="py-16  w-full h-full  bg-[#34353A] flex justify-center items-center ">
       <div className="mx-auto w-[90%] flex justify-center items-center flex-col space-y-5">
         <h2 className="text-white font-bold text-4xl">Portfolio </h2>
         <p className="text-center font-light text-white text-lg">
