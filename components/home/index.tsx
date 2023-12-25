@@ -1,6 +1,5 @@
 "use client";
 import { FC } from "react";
-import { Mousewheel, Pagination } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { GraphicDesineHeroPage } from "../graphic/GraphicDesineHeroPage";
 import { LogoDesine } from "../graphic/LogoDesine";
@@ -12,6 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { HeroPage } from "./HeroPage";
 import { Portfolio } from "./Portfolio";
+import { Mousewheel } from "swiper/modules";
 
 const Contact = [
   { icon: <Whatsapp />, link: "", label: "+91 90800 78315" },
@@ -26,13 +26,13 @@ export const HomePageSwiper: FC = () => {
     <>
       <Swiper
         direction={"vertical"}
-        slidesPerView={1}
+        slidesPerView={"auto"}
         spaceBetween={30}
         mousewheel={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Mousewheel, Pagination]}
+        modules={[Mousewheel]}
         className="mySwiper"
       >
         <SwiperSlide>
