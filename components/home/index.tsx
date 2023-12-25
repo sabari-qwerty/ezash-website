@@ -50,7 +50,7 @@ export const HomePageSwiper: FC = () => {
         <SwiperSlide>
           <SectionLayout className="flex flex-col justify-center items-center space-y-8">
             <div className="font-semibold text-4xl text-white">
-              Here what's my clients says
+              Here what &apos;s my clients says
             </div>
             <div className="w-3/5 h-3/5 ">
               <Image
