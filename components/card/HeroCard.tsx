@@ -17,7 +17,7 @@ export const HeroCard: FC<prop> = ({
   return (
     <Link
       href={url}
-      className="w-[300px] h-[500px] bg-[#2E2F34] rounded-3xl transaction hover:scale-105 transition-all  flex justify-center items-center  flex-col space-y-12 group "
+      className="  w-[300px] h-[500px] bg-[#2E2F34] rounded-3xl transaction hover:scale-105 transition-all  flex justify-center items-center  flex-col space-y-12 group "
     >
       <div className=" w-full h-full flex justify-center items-end">
         {backgroundImage}

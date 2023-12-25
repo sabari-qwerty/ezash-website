@@ -42,7 +42,7 @@ export const CardDesignSipwer: FC = () => {
                       src={data}
                       width={800}
                       height={800}
-                      className="w-full h-full"
+                      className="w-full h-full contain"
                     />
                   </div>
                 </div>

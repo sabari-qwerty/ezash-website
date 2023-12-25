@@ -1,19 +1,13 @@
 "use client";
 import { FC } from "react";
-import { SwiperSlide, Swiper } from "swiper/react";
-import { GraphicDesineHeroPage } from "../graphic/GraphicDesineHeroPage";
-import { LogoDesine } from "../graphic/LogoDesine";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel } from "swiper/modules";
+import { GameHeroPage } from "./HeroPage";
+import { ValorunSlide } from "./valorun";
+import { Moonsine } from "./moonsine";
 import { SectionLayout } from "../sectionLayout";
 import { Discord, Google, Instagram, Telegram, Whatsapp } from "@/assets";
 import cn from "../../utility/css/cn";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import { HeroPage } from "./HeroPage";
-import { Portfolio } from "./Portfolio";
-import { Mousewheel } from "swiper/modules";
-import { MyWorldinThreeD } from "../MyWorldinThreeD";
-import Image from "next/image";
 
 const Contact = [
   { icon: <Whatsapp />, link: "", label: "+91 90800 78315" },
@@ -23,7 +17,7 @@ const Contact = [
   { icon: false, link: "", label: "Contact" },
   { icon: <Discord />, link: "", label: "ezash#0632" },
 ];
-export const HomePageSwiper: FC = () => {
+export const GamePage: FC = () => {
   return (
     <>
       <Swiper
@@ -38,30 +32,24 @@ export const HomePageSwiper: FC = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <HeroPage />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Portfolio />
+          <GameHeroPage />
         </SwiperSlide>
         <SwiperSlide>
-          <MyWorldinThreeD />
+          <ValorunSlide />
         </SwiperSlide>
         <SwiperSlide>
-          <SectionLayout className="flex flex-col justify-center items-center space-y-8">
-            <div className="font-semibold text-4xl text-white">
-              Here what's my clients says
-            </div>
-            <div className="w-3/5 h-3/5 ">
-              <Image
-                src={"/review/feedback.png"}
-                className="w-full h-full contain"
-                alt="img"
-                width={800}
-                height={800}
-              />
-            </div>
-          </SectionLayout>
+          <Moonsine />
+        </SwiperSlide>
+        <SwiperSlide>
+          <video
+            src={
+              "https://video.wixstatic.com/video/c53520_d0a68ce2ef2c4028a1ce7a9638b67ff2/1080p/mp4/file.mp4"
+            }
+            className="w-full h-full object-cover "
+            autoPlay={true}
+            loop={true}
+            muted
+          />
         </SwiperSlide>
         <SwiperSlide>
           <SectionLayout

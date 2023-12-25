@@ -145,3 +145,7 @@ body {
 .swiper-button-next {
   color: #ce8703 !important ;
 }
+
+.contain {
+  object-fit: contain !important;
+}

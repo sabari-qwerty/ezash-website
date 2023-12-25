@@ -27,7 +27,7 @@ export const LogoDesine: FC = () => {
     <SectionLayout className=" w-full relative    flex flex-col ">
       <div className=" w-full h-full    ">
         <SwiperSlide_
-          className="w-full h-full "
+          className="w-full h-full pt-20"
           navigation={true}
           modules={[Navigation]}
         >
@@ -43,13 +43,13 @@ export const LogoDesine: FC = () => {
             >
               <div className="w-full h-full flex justify-center items-center ">
                 <div className="w-full h-full  flex justify-center items-center gap-5">
-                  <div className="w-4/5 h-4/5  ">
+                  <div className="w-4/5 h-4/5">
                     <Image
                       alt="img"
                       src={`/logo/l${data}.png`}
                       width={800}
                       height={800}
-                      className="w-full h-full"
+                      className="w-full h-full contain"
                     />
                   </div>
                 </div>

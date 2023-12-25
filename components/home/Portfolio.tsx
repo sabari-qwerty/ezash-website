@@ -41,7 +41,7 @@ const data = [
       </>
     ),
 
-    url: "/animations",
+    url: "/game",
   },
 ];
 
@@ -54,7 +54,7 @@ export const Portfolio = () => {
           I&apos;m a paragraph. Click here to add your <br /> own text and edit
           me. It&apos;s easy.
         </p>
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid lg:grid-cols-4  grid-cols-2 overflow-auto   gap-5">
           {data.map((data, key) => (
             <HeroCard
               key={key}

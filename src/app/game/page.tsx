@@ -1,7 +1,8 @@
-import React from "react";
+import { FC } from "react";
+import { GamePage } from "../../../components/game";
 
-const page = () => {
-  return <div>page</div>;
+const page: FC = () => {
+  return <GamePage />;
 };
 
 export default page;
