@@ -56,7 +56,7 @@ export const RenderingPage: FC = () => {
                   <div className="w-full h-full">
                     <video
                       src={data.src}
-                      className="w-full h-full object-cover opacity-80"
+                      className="w-full h-full object-cover "
                       autoPlay={true}
                       loop={true}
                     />
@@ -68,7 +68,7 @@ export const RenderingPage: FC = () => {
                     <img
                       src={data.src}
                       alt="img"
-                      className="w-full h-full object-cover opacity-80"
+                      className="w-full h-full object-cover "
                     />
                   </div>
                 </SwiperSlide>

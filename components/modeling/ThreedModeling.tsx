@@ -42,7 +42,7 @@ export const ThreedModeling: FC = () => {
                   <img
                     src={data}
                     alt="img"
-                    className="w-full h-full object-cover opacity-80"
+                    className="w-full h-full object-cover "
                   />
                 </div>
               </SwiperSlide>

@@ -67,7 +67,7 @@ export const TeacherPainting: FC = () => {
                   src={
                     "https://video.wixstatic.com/video/c53520_98bbbecd06ad4e1a8e73c969b73cfefc/720p/mp4/file.mp4"
                   }
-                  className="w-1/2 h-1/2 object-cover border-2 opacity-80"
+                  className="w-1/2 h-1/2 object-cover border-2 "
                   autoPlay={true}
                   loop={true}
                 />
