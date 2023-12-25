@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { HeadingWithBorder } from "../headingWithBorder";
 import Image from "next/image";
+import { SliderHeading } from "../SliderHeading";
 
 export const TeacherPainting: FC = () => {
   return (
@@ -14,24 +15,6 @@ export const TeacherPainting: FC = () => {
           navigation={true}
           modules={[Navigation]}
         >
-          <SwiperSlide
-            style={{
-              background: "#34353A",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            className=" text-white"
-          >
-            <div className="w-3/5 flex items-center  justify-between">
-              <HeadingWithBorder
-                heading=" Texture Painting  "
-                headingClass="text-6xl"
-                className="space-y-8"
-              />
-            </div>
-          </SwiperSlide>
-
           <SwiperSlide
             style={{
               background: "#34353A",
@@ -93,6 +76,7 @@ export const TeacherPainting: FC = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      <SliderHeading heading="Texture Painting" />
     </SectionLayout>
   );
 };

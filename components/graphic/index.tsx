@@ -6,6 +6,7 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import "./style.css";
 import "swiper/css";
 import "swiper/css/pagination";
+
 import { SectionLayout } from "../sectionLayout";
 
 import { GraphicDesineHeroPage } from "./GraphicDesineHeroPage";

@@ -3,6 +3,7 @@ import { HeadingWithBorder } from "../headingWithBorder";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { SectionLayout } from "../sectionLayout";
+import { SliderHeading } from "../SliderHeading";
 
 const data = [
   {
@@ -33,23 +34,6 @@ export const RenderingPage: FC = () => {
             navigation={true}
             modules={[Navigation]}
           >
-            <SwiperSlide
-              style={{
-                background: "#34353A",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              className=" text-white"
-            >
-              <div className="w-3/5 flex items-center  justify-between">
-                <HeadingWithBorder
-                  heading="Rendering"
-                  headingClass="text-6xl"
-                  className="space-y-8"
-                />
-              </div>
-            </SwiperSlide>
             {data.map((data, key) =>
               data.type === "viedo" ? (
                 <SwiperSlide key={key}>
@@ -77,6 +61,7 @@ export const RenderingPage: FC = () => {
             )}
           </Swiper>
         </div>
+        <SliderHeading heading="Rendering" />
       </SectionLayout>
     </>
   );

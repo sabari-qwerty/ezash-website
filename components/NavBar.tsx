@@ -28,7 +28,7 @@ export const NavBar: FC<prop> = ({ className }) => {
   ];
   return (
     <div
-      className={`w-full  justify-center items-center    ${
+      className={`w-full   justify-center items-center    ${
         ["/graphic", "/modeling", "/game", "/animations"].includes(path)
           ? "hidden"
           : "flex"

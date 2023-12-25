@@ -24,7 +24,7 @@ export const SectionNavBar: FC<prop> = ({ className }) => {
     <div className={`w-full  justify-center items-center     flex `}>
       <nav
         className={cn(
-          `w-full mx-auto flex justify-center space-x-16 absolute top-0 py-8   z-50   ${className}`
+          `w-full lg:w-[90%]  lg:mx-auto flex justify-center lg:justify-end space-x-16 absolute top-0 py-8   z-50   ${className}`
         )}
       >
         {NavBarContent.map((data, key) => (

@@ -12,6 +12,9 @@ import { Discord, Google, Instagram, Telegram, Whatsapp } from "@/assets";
 import { SectionLayout } from "../sectionLayout";
 import cn from "../../utility/css/cn";
 
+import "swiper/css";
+import "swiper/css/navigation";
+
 const Contact = [
   { icon: <Whatsapp />, link: "", label: "+91 90800 78315" },
   { icon: <Google />, link: "", label: "ezash00@gmail.com" },

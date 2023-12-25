@@ -3,35 +3,18 @@ import { SectionLayout } from "../sectionLayout";
 import { Navigation } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { HeadingWithBorder } from "../headingWithBorder";
+import { SliderHeading } from "../SliderHeading";
 
 export const ProductViedoRendering: FC = () => {
   return (
     <>
-      <SectionLayout className="w-full relative flex flex-col bg-[#2e2f34]">
+      <SectionLayout className="w-full relative flex flex-col bg-[#2e2f34] ">
         <div className="w-full h-full bg-black">
           <Swiper
             className="w-full h-full mySwiper"
             navigation={true}
             modules={[Navigation]}
           >
-            <SwiperSlide
-              style={{
-                background: "#34353A",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              className=" text-white"
-            >
-              <div className="w-3/5 flex items-center  justify-between">
-                <HeadingWithBorder
-                  heading="Product Viedo Rendering"
-                  headingClass="text-6xl"
-                  className="space-y-8"
-                />
-              </div>
-            </SwiperSlide>
-
             <SwiperSlide>
               <div className="w-full h-full">
                 <video
@@ -47,6 +30,7 @@ export const ProductViedoRendering: FC = () => {
             </SwiperSlide>
           </Swiper>
         </div>
+        <SliderHeading heading="Products Show Reel" />
       </SectionLayout>
     </>
   );

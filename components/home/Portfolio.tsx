@@ -1,26 +1,46 @@
 "use client";
 
+import { GameIcon, GrapichIcon, ThreedmodelingIcon, ViedoIcon } from "@/assets";
 import { HeroCard } from "../card/HeroCard";
 
 const data = [
   {
-    backgroundImage: "/card/2db.png",
-    heroImage: "/card/2df.png",
+    backgroundImage: <GrapichIcon className="text-8xl" />,
+    heading: (
+      <>
+        Graphics & <br /> UI/UX Designs
+      </>
+    ),
     url: "/graphic",
   },
   {
-    backgroundImage: "/card/3dB.png",
-    heroImage: "/card/3df.png",
+    backgroundImage: <ThreedmodelingIcon className="text-8xl" />,
+    heading: (
+      <>
+        3D Modeling & <br /> Animation
+      </>
+    ),
+
     url: "/modeling",
   },
   {
-    backgroundImage: "/card/vidb.png",
-    heroImage: "/card/vidf.png",
+    backgroundImage: <GameIcon className="text-8xl" />,
+    heading: (
+      <>
+        Video editing & <br /> 2D animations
+      </>
+    ),
+
     url: "/game",
   },
   {
-    backgroundImage: "/card/vrb.png",
-    heroImage: "/card/vrf.png",
+    backgroundImage: <ViedoIcon className="text-8xl" />,
+    heading: (
+      <>
+        Game & VR <br /> Development
+      </>
+    ),
+
     url: "/animations",
   },
 ];
@@ -28,7 +48,7 @@ const data = [
 export const Portfolio = () => {
   return (
     <section className="py-16  w-full h-full  bg-[#34353A] flex justify-center items-center ">
-      <div className="mx-auto w-[90%] flex justify-center items-center flex-col space-y-5">
+      <div className="mx-auto w-[90%] flex justify-center items-center flex-col space-y-8">
         <h2 className="text-white font-bold text-4xl">Portfolio </h2>
         <p className="text-center font-light text-white text-lg">
           I&apos;m a paragraph. Click here to add your <br /> own text and edit
@@ -39,7 +59,7 @@ export const Portfolio = () => {
             <HeroCard
               key={key}
               backgroundImage={data.backgroundImage}
-              heroImage={data.heroImage}
+              heading={data.heading}
               url={data.url}
             />
           ))}

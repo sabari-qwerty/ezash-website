@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { SliderHeading } from "../SliderHeading";
 
 const data = ["/modeling/1.jpg", "/modeling/2.jpg", "/modeling/3.jpg"];
 
@@ -19,23 +20,6 @@ export const ThreedModeling: FC = () => {
             navigation={true}
             modules={[Navigation]}
           >
-            <SwiperSlide
-              style={{
-                background: "#34353A",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              className=" text-white"
-            >
-              <div className="w-3/5 flex items-center  justify-between">
-                <HeadingWithBorder
-                  heading=" 3D Modeling "
-                  headingClass="text-6xl"
-                  className="space-y-8"
-                />
-              </div>
-            </SwiperSlide>
             {data.map((data, key) => (
               <SwiperSlide key={key}>
                 <div className="w-full h-full">
@@ -49,6 +33,7 @@ export const ThreedModeling: FC = () => {
             ))}
           </Swiper>
         </div>
+        <SliderHeading heading="3D Modeling" />
       </SectionLayout>
     </>
   );
