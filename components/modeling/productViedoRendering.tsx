@@ -41,6 +41,7 @@ export const ProductViedoRendering: FC = () => {
                   className="w-full h-full object-cover "
                   autoPlay={true}
                   loop={true}
+                  muted
                 />
               </div>
             </SwiperSlide>

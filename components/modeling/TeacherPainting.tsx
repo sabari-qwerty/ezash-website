@@ -70,6 +70,7 @@ export const TeacherPainting: FC = () => {
                   className="w-1/2 h-1/2 object-cover border-2 "
                   autoPlay={true}
                   loop={true}
+                  muted
                 />
               </div>
               <div className="w-1/2 h-full flex justify-center items-center  group">
