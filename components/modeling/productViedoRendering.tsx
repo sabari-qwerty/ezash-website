@@ -38,7 +38,7 @@ export const ProductViedoRendering: FC = () => {
                   src={
                     "https://video.wixstatic.com/video/c53520_4f656aa5b33a421d9ce686ad74fc74dc/1080p/mp4/file.mp4"
                   }
-                  className="w-full h-full object-cover opacity-80"
+                  className="w-full h-full object-cover "
                   autoPlay={true}
                   loop={true}
                 />
