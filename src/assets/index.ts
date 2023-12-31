@@ -17,7 +17,13 @@ import threedmodeling from './svg/Portfolio/threedmodeling.svg'
 import game from './svg/Portfolio/game.svg'
 import viedo from './svg/Portfolio/viedoanime.svg'
 
-// export svg component
+// flg
+import azfalgicon from './svg/falg/az.svg'
+import infalgicon from './svg/falg/in.svg'
+import idfalgicon from './svg/falg/id.svg'
+import usfalgicon from './svg/falg/us.svg'
+
+import about from './svg/about.svg'
 
 // socila media
 
@@ -36,3 +42,14 @@ export const GrapichIcon = grapich
 export const ThreedmodelingIcon = threedmodeling
 export const GameIcon = game
 export const ViedoIcon = viedo
+
+
+// falg
+
+export const AZfalgicon = azfalgicon
+export const InFalgicon = infalgicon
+export const IDfalgicon = idfalgicon
+export const USFalgicon = usfalgicon
+
+export const About = about
+

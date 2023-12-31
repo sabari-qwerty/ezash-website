@@ -3,11 +3,12 @@ import { SectionLayout } from "../sectionLayout";
 import { HeadingWithBorder } from "../headingWithBorder";
 import { SwiperSlide, Swiper as SwiperSlide_ } from "swiper/react";
 import Swiper from "swiper";
-import { Arow } from "@/assets";
 import Image from "next/image";
 import { SliderHeading } from "../SliderHeading";
 import { Navigation } from "swiper/modules";
 
+import "swiper/css";
+import "swiper/css/navigation";
 export const LogoDesine: FC = () => {
   useEffect(() => {
     // Initialize Swiper

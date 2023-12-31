@@ -12,6 +12,10 @@ export const SectionNavBar: FC<prop> = ({ className }) => {
       dir: "/",
     },
     {
+      lable: "Portfolio",
+      dir: "/#portfolio",
+    },
+    {
       lable: "About",
       dir: "/about",
     },

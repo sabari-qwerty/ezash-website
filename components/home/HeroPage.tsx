@@ -3,7 +3,11 @@ import { SectionLayout } from "../sectionLayout";
 import Image from "next/image";
 import { SectionNavBar } from "../SectionNavBar";
 
-export const HeroPage: FC = () => {
+interface prop {
+  nextSlide?: () => void;
+}
+
+export const HeroPage: FC<prop> = ({ nextSlide }) => {
   return (
     <SectionLayout className=" flex flex-col ">
       <SectionNavBar />
@@ -20,7 +24,9 @@ export const HeroPage: FC = () => {
               </h2>
             </div>
             <div className="w-full  flex justify-start">
-              <button className="custom-btn btn-15 ">PORTFOLIO</button>
+              <button className="custom-btn btn-15 " onClick={nextSlide}>
+                PORTFOLIO
+              </button>
             </div>
           </div>
         </div>

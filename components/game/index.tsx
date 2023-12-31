@@ -2,7 +2,7 @@
 import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel } from "swiper/modules";
-import { GameHeroPage } from "./HeroPage";
+import { GameHeroPage, GameHeroSecondPage } from "./HeroPage";
 import { ValorunSlide } from "./valorun";
 import { Moonsine } from "./moonsine";
 import { SectionLayout } from "../sectionLayout";
@@ -33,6 +33,9 @@ export const GamePage: FC = () => {
       >
         <SwiperSlide>
           <GameHeroPage />
+        </SwiperSlide>
+        <SwiperSlide>
+          <GameHeroSecondPage />
         </SwiperSlide>
         <SwiperSlide>
           <ValorunSlide />

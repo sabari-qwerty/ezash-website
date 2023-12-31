@@ -33,7 +33,7 @@ export const IllustrationDesign: FC = () => {
             >
               <div className="w-full h-full flex justify-center items-center ">
                 <div className="w-full h-full  flex justify-center items-center gap-5">
-                  <div className="w-4/5 h-4/5  ">
+                  <div className="w-full h-full  ">
                     <Image
                       alt="img"
                       src={data}

@@ -3,6 +3,7 @@ import { FC } from "react";
 import { ActiveLink } from "./ActiveLink";
 import cn from "../utility/css/cn";
 import { usePathname } from "next/navigation";
+import { dir } from "console";
 
 interface prop {
   className?: string;
@@ -18,9 +19,15 @@ export const NavBar: FC<prop> = ({ className }) => {
       dir: "/",
     },
     {
+      lable: "portfolio",
+      dir: "/#portfolio",
+    },
+
+    {
       lable: "About",
       dir: "/about",
     },
+
     {
       lable: "Contact",
       dir: "/contact",

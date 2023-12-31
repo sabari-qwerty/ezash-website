@@ -8,12 +8,32 @@ import { Arow } from "@/assets";
 import Image from "next/image";
 import { SliderHeading } from "../SliderHeading";
 import { Navigation } from "swiper/modules";
+import cn from "../../utility/css/cn";
+
+// const data = [
+//   "/package/1.png",
+//   "/package/2.jpg",
+//   "/package/3.jpg",
+//   "/package/4.png",
+// ];
 
 const data = [
-  "/package/1.png",
-  "/package/2.jpg",
-  "/package/3.jpg",
-  "/package/4.png",
+  {
+    src: "/package/1.png",
+    view: false,
+  },
+  {
+    src: "/package/2.jpg",
+    view: true,
+  },
+  {
+    src: "/package/3.jpg",
+    view: true,
+  },
+  {
+    src: "/package/4.png",
+    view: false,
+  },
 ];
 
 export const PackageDesignSipwer: FC = () => {
@@ -53,14 +73,18 @@ export const PackageDesignSipwer: FC = () => {
               }}
             >
               <div className="w-full h-full flex justify-center items-center ">
-                <div className="w-full h-full  flex justify-center items-center gap-5">
-                  <div className="w-4/5 h-4/5  ">
+                <div className="w-full h-full  flex justify-center items-center gap-5 ">
+                  <div
+                    className={cn(
+                      `w-4/5 h-4/5   ${data.view && "w-full h-full"}`
+                    )}
+                  >
                     <Image
                       alt="img"
-                      src={data}
+                      src={data.src}
                       width={800}
                       height={800}
-                      className="w-full h-full contain"
+                      className={`w-full h-full ${!data.view && "contain"} `}
                     />
                   </div>
                 </div>

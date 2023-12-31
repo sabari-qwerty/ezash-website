@@ -14,6 +14,10 @@ const data = [
     type: "image",
     src: "https://static.wixstatic.com/media/f88658_c7771da7d07944d48f8533ad18a3ef95~mv2.webp",
   },
+  {
+    type: "image",
+    src: "/sculpting/apj.png",
+  },
 ];
 
 export const Sculpting: FC = () => {
