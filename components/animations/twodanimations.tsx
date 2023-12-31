@@ -11,13 +11,6 @@ const data = [
   },
 ];
 
-const data2 = [
-  {
-    type: "viedo",
-    src: "https://video.wixstatic.com/video/f88658_cdb724984b66424191571a10c847f1ee/1080p/mp4/file.mp4",
-  },
-];
-
 export const Twodanimations: FC = () => {
   return (
     <SectionLayout className=" w-full relative    flex flex-col ">

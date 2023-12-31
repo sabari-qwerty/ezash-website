@@ -1,14 +1,14 @@
 "use client";
-import React, { FormEvent } from "react";
+import React, { FC, FormEvent } from "react";
 import { InputWithLable } from "./InputWithLable";
 
-export const Contactfrom = () => {
+export const Contactfrom: FC = () => {
   const handleSubmite = (e: FormEvent) => {
     e.preventDefault();
     alert("thanks");
   };
   return (
-    <form onSubmit={handleSubmite} className="flex flex-col space-y-8">
+    <form onSubmit={handleSubmite} className="flex flex-col space-y-8 ">
       <div className="flex space-x-8">
         <InputWithLable lable="First Name" type="text" id="first" required />
         <InputWithLable lable="Last Name" type="text" id="last" required />
@@ -18,7 +18,7 @@ export const Contactfrom = () => {
         <InputWithLable lable="Phone Number" type="text" id="phone" required />
       </div>
       <div className="w-full flex flex-col space-y-2  ">
-        <label htmlFor="message" className="text-white">
+        <label htmlFor="message" className="text-white w-full text-left">
           Leave us a message...
         </label>
         <textarea

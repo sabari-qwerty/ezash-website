@@ -6,6 +6,7 @@ import cn from "../utility/css/cn";
 import { SectionLayout } from "./sectionLayout";
 import Image from "next/image";
 import Link from "next/link";
+import { ActiveLink } from "./ActiveLink";
 
 const Contact = [
   { icon: <Whatsapp />, link: "", label: "+91 90800 78315" },
@@ -26,7 +27,7 @@ const data = [
     valueTwo: { name: "Home", url: "/" },
   },
   {
-    valueOne: { name: "Video editing & 2D animations", url: "/game" },
+    valueOne: { name: "Video editing & 2D animations", url: "/animations" },
     valueTwo: { name: "About", url: "/about" },
   },
   {
@@ -46,8 +47,8 @@ export const Footer: FC = () => {
       <footer className={cn(`w-full h-full grid grid-rows-2 `)}>
         <div className="w-4/5 mx-auto h-full flex  space-x-8 items-center justify-center   ">
           <div className="w-4/5  h-full grid grid-cols-3 gap-2  items-center  justify-between ">
-            <div className="w-full h-full flex items-center">
-              <div className="w-[200px] ">
+            <div className="w-full h-full flex items-center pl-10">
+              <div className="w-[250px] ">
                 <Image
                   src={"/ezashround.png"}
                   alt="amount"
@@ -59,12 +60,22 @@ export const Footer: FC = () => {
             <div className="col-span-2 w-full h-full flex  flex-col items-center justify-center space-y-6 text-white  text-lg">
               {data.map((data, key) => (
                 <div key={key} className=" flex justify-between w-full  ">
-                  <Link href={data.valueOne.url} className="text-left">
+                  <ActiveLink
+                    href={data.valueOne.url}
+                    className="text-left"
+                    lable={data.valueOne.name}
+                  />
+                  <ActiveLink
+                    href={data.valueTwo.url}
+                    className="text-right pr-20"
+                    lable={data.valueTwo.name}
+                  />
+                  {/* <Link href={data.valueOne.url} className="text-left">
                     {data.valueOne.name}
                   </Link>
                   <Link href={data.valueTwo.url} className="text-right px-12">
                     {data.valueTwo.name}
-                  </Link>
+                  </Link> */}
                 </div>
               ))}
             </div>

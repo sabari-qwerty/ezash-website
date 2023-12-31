@@ -15,7 +15,7 @@ export const InputWithLable: FC<prop> = ({ lable, type, id, ...rest }) => {
       <input
         type={type}
         id={id}
-        className=" bg-transparent focus:text-white focus:bg-black outline-1 indent-2 outline-white border-white inputTag w-full min-h-[40px]"
+        className=" bg-transparent focus:text-white  outline-1 indent-2 outline-white border-white inputTag w-full min-h-[40px]"
         {...rest}
       />
     </div>

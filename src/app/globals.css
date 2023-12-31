@@ -126,7 +126,6 @@ body {
 }
 .inputTag:hover {
   border: 2px solid #fff;
-  background-color: #000;
 }
 
 .swiper-pagination-bullet {

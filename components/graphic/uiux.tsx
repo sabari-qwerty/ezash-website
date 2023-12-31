@@ -5,6 +5,7 @@ import { SectionLayout } from "../sectionLayout";
 import { HeadingWithBorder } from "../headingWithBorder";
 import Image from "next/image";
 import { SliderHeading } from "../SliderHeading";
+import { Navigation } from "swiper/modules";
 
 const data = ["/uiux/1.png", "/uiux/2.png", "/uiux/3.png", "/uiux/4.png"];
 
@@ -14,7 +15,11 @@ export const UiUxDesignSipwer: FC = () => {
   return (
     <SectionLayout className=" w-full relative     flex flex-col bg-[#2e2f34] ">
       <div className=" w-full h-full ">
-        <SwiperSlide_ className="w-full h-full  ">
+        <SwiperSlide_
+          className="w-full h-full "
+          navigation={true}
+          modules={[Navigation]}
+        >
           {data.map((data, key) => (
             <SwiperSlide
               key={key}

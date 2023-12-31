@@ -13,7 +13,7 @@ const data = [
 
 export const ViedoEditing: FC = () => {
   return (
-    <SectionLayout className=" w-full relative    flex flex-col ">
+    <SectionLayout className=" w-full relative    flex flex-col   ">
       <div className=" w-full h-full    ">
         <SwiperSlide_
           className="w-full h-full pt-20"
@@ -26,7 +26,7 @@ export const ViedoEditing: FC = () => {
                 <div className="w-full h-full">
                   <video
                     src={data.src}
-                    className="w-full h-full  "
+                    className="w-full h-full object-cover "
                     autoPlay={true}
                     loop={true}
                     muted
@@ -39,7 +39,7 @@ export const ViedoEditing: FC = () => {
                   <img
                     src={data.src}
                     alt="img"
-                    className="w-full h-full object-cover  "
+                    className="w-full h-full object-cover "
                   />
                 </div>
               </SwiperSlide>
