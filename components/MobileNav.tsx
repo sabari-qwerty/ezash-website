@@ -23,7 +23,7 @@ export const MobileNav: FC = () => {
   ];
   return (
     <div className={`w-full justify-center items-center flex`}>
-      <nav className={cn(`w-4/5   py-2 flex justify-between`)}>
+      <nav className={cn(`w-4/5  py-10 flex justify-between`)}>
         {NavBarContent.map((data, key) => (
           <ActiveLink
             href={data.dir}

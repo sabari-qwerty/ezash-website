@@ -55,7 +55,7 @@ export const HeroPage: FC<prop> = ({ nextSlide }) => {
             </button>
           </div>
           <div className="flex-1 w-full h-full flex justify-center items-center">
-            <div className="h-3/4">
+            <div className="h-2/4">
               <img src="/hero.png" alt="img" />
             </div>
           </div>
