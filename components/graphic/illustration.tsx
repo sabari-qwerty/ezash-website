@@ -9,7 +9,13 @@ import Image from "next/image";
 import { SliderHeading } from "../SliderHeading";
 import { Navigation } from "swiper/modules";
 
-const data = ["/illustration/1.jpg"];
+const data = [
+  "/illustration/0.png",
+  "/illustration/1.jpg",
+  "/illustration/2.png",
+  "/illustration/3.png",
+  "/illustration/4.png",
+];
 
 export const IllustrationDesign: FC = () => {
   return (

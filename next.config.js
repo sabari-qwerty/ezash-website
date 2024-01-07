@@ -27,7 +27,9 @@ const nextConfig = module.exports = {
 
         return config
     },
-
+    images: {
+        domains: [ 'static.wixstatic.com' ]
+    }
     // ...other config
 }
 module.exports = nextConfig

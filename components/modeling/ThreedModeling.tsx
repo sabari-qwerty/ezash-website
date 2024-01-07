@@ -8,7 +8,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { SliderHeading } from "../SliderHeading";
 
-const data = ["/modeling/1.jpg", "/modeling/2.jpg", "/modeling/3.jpg"];
+const data = [
+  "/modeling/1.jpg",
+  "/modeling/2.jpg",
+  "/modeling/3.jpg",
+  "/modeling/MOD1.png",
+  "/modeling/MOD2.png",
+  "/modeling/MOD5.png",
+];
 
 export const ThreedModeling: FC = () => {
   return (

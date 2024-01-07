@@ -3,7 +3,7 @@ import { SectionLayout } from "./sectionLayout";
 
 export const MyWorldinThreeD: FC = () => {
   return (
-    <SectionLayout className="w-full h-full  grid grid-cols-2 gap-28    ">
+    <SectionLayout className="w-full h-full  lg:grid grid-cols-2 gap-28    ">
       <div className="w-full h-full  flex justify-end items-center">
         <div className="w-3/5 h-3/5">
           <img src="https://static.wixstatic.com/media/f88658_63c1a990700e4a718aced07a8faa4e56~mv2.png/v1/fill/w_389,h_389,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f88658_63c1a990700e4a718aced07a8faa4e56~mv2.png" />

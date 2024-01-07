@@ -12,6 +12,14 @@ const data = [
   },
   {
     type: "image",
+    src: "/sculpting/SCU1.png",
+  },
+  {
+    type: "image",
+    src: "/sculpting/SCU2.png",
+  },
+  {
+    type: "image",
     src: "https://static.wixstatic.com/media/f88658_c7771da7d07944d48f8533ad18a3ef95~mv2.webp",
   },
   {

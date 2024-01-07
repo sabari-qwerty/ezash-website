@@ -7,7 +7,12 @@ import Image from "next/image";
 import { SliderHeading } from "../SliderHeading";
 import { Navigation } from "swiper/modules";
 
-const data = ["/uiux/1.png", "/uiux/2.png", "/uiux/3.png", "/uiux/4.png"];
+const data = [
+  "https://static.wixstatic.com/media/a34826_9dd9c51720cc4f70830b1ffab5a2cfa9~mv2.png/v1/fill/w_1920,h_800,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a34826_9dd9c51720cc4f70830b1ffab5a2cfa9~mv2.png",
+  "https://static.wixstatic.com/media/a34826_a367043cdae849edaeb3c287c14c6f9b~mv2.png/v1/fill/w_1920,h_800,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a34826_a367043cdae849edaeb3c287c14c6f9b~mv2.png ",
+  "https://static.wixstatic.com/media/a34826_e39eb93af5484224bfaa96d4d1bc771e~mv2.png/v1/fill/w_1920,h_800,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a34826_e39eb93af5484224bfaa96d4d1bc771e~mv2.png",
+  "https://static.wixstatic.com/media/a34826_76ccd01a330c4bad84e93d548ceeb008~mv2.png/v1/fill/w_1920,h_800,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a34826_76ccd01a330c4bad84e93d548ceeb008~mv2.png",
+];
 
 export const UiUxDesignSipwer: FC = () => {
   const slidNumber = [1, 2, 3, 4, 5];
@@ -31,7 +36,7 @@ export const UiUxDesignSipwer: FC = () => {
               }}
             >
               <div className="w-full h-full flex justify-center items-center ">
-                <div className="w-full h-full  flex justify-center items-center gap-5">
+                <div className="w-full h-full  flex justify-center items-center gap-5 bg-white ">
                   <div className="w-4/5 h-4/5  ">
                     <Image
                       alt="img"

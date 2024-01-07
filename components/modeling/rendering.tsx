@@ -22,6 +22,11 @@ const data = [
     type: "viedo",
     src: "https://video.wixstatic.com/video/c53520_2e940e22127149278c33a68f2865ac0b/1080p/mp4/file.mp4",
   },
+
+  {
+    type: "image",
+    src: "/rendering/RENDER1.png",
+  },
 ];
 
 export const RenderingPage: FC = () => {

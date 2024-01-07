@@ -151,3 +151,15 @@ body {
 .contain {
   object-fit: contain !important;
 }
+
+.mobile-only {
+}
+
+.desktop-only {
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}

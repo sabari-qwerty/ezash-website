@@ -8,16 +8,27 @@ import { Arow } from "@/assets";
 import Image from "next/image";
 import { SliderHeading } from "../SliderHeading";
 import { Navigation } from "swiper/modules";
+import cn from "../../utility/css/cn";
+
+// const data = [
+//   "/card/graphic/1.jpg",
+//   "/card/graphic/2.jpg",
+//   "/card/graphic/3.png",
+//   "/card/graphic/CD1.png",
+//   "/card/graphic/CD 2.png",
+// ];
 
 const data = [
-  "/card/graphic/1.jpg",
-  "/card/graphic/2.jpg",
-  "/card/graphic/3.png",
+  { src: "/card/graphic/1.jpg", view: false, bg: "" },
+  { src: "/card/graphic/2.jpg", view: false, bg: "" },
+  { src: "/card/graphic/3.png", view: false, bg: "" },
+  { src: "/card/graphic/CD1.png", view: true, bg: "#4A4A4A" },
+  { src: "/card/graphic/CD 2.png", view: true, bg: "#2F3135" },
 ];
 
 export const CardDesignSipwer: FC = () => {
   return (
-    <SectionLayout className=" w-full relative     flex flex-col bg-[#2e2f34] ">
+    <SectionLayout className=" w-full relative     lg:flex flex-col bg-[#2e2f34] ">
       <div className=" w-full h-full ">
         <SwiperSlide_
           className="w-full h-full "
@@ -36,10 +47,19 @@ export const CardDesignSipwer: FC = () => {
             >
               <div className="w-full h-full flex justify-center items-center ">
                 <div className="w-full h-full  flex justify-center items-center gap-5">
-                  <div className="w-4/5 h-4/5  ">
+                  <div
+                    className={cn(
+                      `w-full h-full ${
+                        !data.view && "w-4/5 h-4/5"
+                      } object-fill `
+                    )}
+                    style={{
+                      backgroundColor: `${data.bg}`,
+                    }}
+                  >
                     <Image
                       alt="img"
-                      src={data}
+                      src={data.src}
                       width={800}
                       height={800}
                       className="w-full h-full contain"

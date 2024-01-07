@@ -10,6 +10,7 @@ import { SliderHeading } from "../SliderHeading";
 import { Navigation } from "swiper/modules";
 
 const data = [
+  "/social/social 0.png",
   "/social/social 1.png",
   "/social/social 2.png",
   "/social/social 3.png",

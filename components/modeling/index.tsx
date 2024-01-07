@@ -15,6 +15,8 @@ import cn from "../../utility/css/cn";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Footer } from "../Footer";
+import { ListingImages } from "./ListingImages";
+import { ProductRenderImages } from "./ProductRenderImages";
 
 const Contact = [
   { icon: <Whatsapp />, link: "", label: "+91 90800 78315" },
@@ -55,6 +57,12 @@ export const ModelingPage: FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ProductViedoRendering />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ListingImages />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductRenderImages />
         </SwiperSlide>
         <SwiperSlide>
           <Footer />

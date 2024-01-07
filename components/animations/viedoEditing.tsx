@@ -13,7 +13,7 @@ const data = [
 
 export const ViedoEditing: FC = () => {
   return (
-    <SectionLayout className=" w-full relative    flex flex-col   ">
+    <SectionLayout className=" w-full relative    lg:flex flex-col   ">
       <div className=" w-full h-full    ">
         <SwiperSlide_
           className="w-full h-full pt-20"

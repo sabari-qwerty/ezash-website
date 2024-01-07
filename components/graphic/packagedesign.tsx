@@ -19,6 +19,10 @@ import cn from "../../utility/css/cn";
 
 const data = [
   {
+    src: "/package/0.png",
+    view: false,
+  },
+  {
     src: "/package/1.png",
     view: false,
   },

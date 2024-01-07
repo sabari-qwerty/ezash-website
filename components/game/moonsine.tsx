@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Moonsine: FC = () => {
   return (
-    <SectionLayout className="grid grid-cols-2 gap-16">
+    <SectionLayout className="lg:grid grid-cols-2 gap-16">
       <div className="w-full h-full  flex  justify-end items-center">
         <div className="w-4/5 h-4/5  flex justify-center  items-center">
           <video

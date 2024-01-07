@@ -41,7 +41,7 @@ export const Footer: FC = () => {
   const bool = console.log();
   return (
     <SectionLayout
-      className="w-full h-full flex
+      className="w-full h-full lg:flex
    justify-center items-center "
     >
       <footer className={cn(`w-full h-full grid grid-rows-2 `)}>

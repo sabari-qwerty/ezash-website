@@ -34,7 +34,63 @@ export const TeacherPainting: FC = () => {
             <div className="z-50 w-1/2 h-full flex flex-col "></div>
             <div className="z-50 w-1/2 h-full "></div>
           </SwiperSlide>
-
+          <SwiperSlide
+            style={{
+              background: "#34353A",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            className=" text-white relative "
+          >
+            <Image
+              src={"/teacherpainting/TEXT1.png"}
+              className="w-full h-full absolute top-0 "
+              width={800}
+              height={800}
+              alt="img"
+            />
+            <div className="z-50 w-1/2 h-full flex flex-col "></div>
+            <div className="z-50 w-1/2 h-full "></div>
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              background: "#34353A",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            className=" text-white relative "
+          >
+            <Image
+              src={"/teacherpainting/TEXT2.png"}
+              className="w-full h-full absolute top-0 "
+              width={800}
+              height={800}
+              alt="img"
+            />
+            <div className="z-50 w-1/2 h-full flex flex-col "></div>
+            <div className="z-50 w-1/2 h-full "></div>
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              background: "#34353A",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            className=" text-white relative "
+          >
+            <Image
+              src={"/teacherpainting/TEXT3.png"}
+              className="w-full h-full absolute top-0 "
+              width={800}
+              height={800}
+              alt="img"
+            />
+            <div className="z-50 w-1/2 h-full flex flex-col "></div>
+            <div className="z-50 w-1/2 h-full "></div>
+          </SwiperSlide>
           <SwiperSlide
             style={{
               background: "#34353A",

@@ -10,6 +10,8 @@ import { SliderHeading } from "../SliderHeading";
 import { Navigation } from "swiper/modules";
 
 const data = [
+  "/brochure/BR12.png",
+  "/brochure/BR2.png",
   "/brochure/br1.png",
   "/brochure/a34826_31ddc73dcbb743f996d92f7b71d0879d_mv2_1_removebg_preview.png",
   "/brochure/Screenshot_2023_11_14_at_13_32_18_a34826_42bd371cc27e41dfb981df62b0aad3fe.png",
@@ -19,7 +21,7 @@ export const BrochureSlider: FC = () => {
   const slidNumber = [1, 2, 3, 4, 5];
 
   return (
-    <SectionLayout className=" w-full relative     flex flex-col bg-[#2e2f34] ">
+    <SectionLayout className=" w-full relative     lg:flex flex-col bg-[#2e2f34] ">
       <div className=" w-full h-full ">
         <SwiperSlide_
           className="w-full h-full"
@@ -44,7 +46,7 @@ export const BrochureSlider: FC = () => {
                       src={data}
                       width={800}
                       height={800}
-                      className="w-full h-full"
+                      className="w-full h-full "
                     />
                   </div>
                 </div>

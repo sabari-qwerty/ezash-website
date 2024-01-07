@@ -57,7 +57,7 @@ export const GamePage: FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <SectionLayout
-            className="w-full h-full flex
+            className="w-full h-full lg:flex
            justify-center items-center "
           >
             <Footer />
