@@ -153,7 +153,7 @@ body {
 }
 
 .mobile-only {
-  display: inline-block;
+  display: flex;
 }
 
 .desktop-only {
