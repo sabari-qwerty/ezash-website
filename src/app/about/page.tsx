@@ -63,12 +63,21 @@ const page = () => {
                 A Bit About Me
               </h2>
               <p className="text-3xl text-white">
-                I have an 2 years experience 3d visualizing & graphic design, To
+                I have an 3 years experience 3d visualizing & graphic design, To
                 work in an environment which encourages me to succeed and grow
                 professionally where i can utilize my skill and knowledge in an
                 organizes the value of hard work and trusts me with
                 responsibilities and challenge
               </p>
+              <div className="w-full flex justify-center">
+                <a
+                  href="https://drive.google.com/file/d/16UJuXz-Rz0H80ysgO3FxPvxG3Llzv6X_/view"
+                  target="_blank"
+                  className=" bg-[#ffa600] text-black px-2 py-2 rounded-lg w-[200px] "
+                >
+                  View Resume
+                </a>
+              </div>
             </div>
           </SectionLayout>
         </SwiperSlide>

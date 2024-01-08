@@ -19,7 +19,7 @@ const page = () => {
           clickable: true,
         }}
         modules={[Mousewheel]}
-        className="mySwiper"
+        className="mySwiper bg-black w-full h-full"
       >
         <SwiperSlide>
           <SectionLayout className="w-full">
@@ -27,7 +27,7 @@ const page = () => {
             <SectionNavBar />
 
             <div className="mx-auto w-4/5 flex flex-col lg:flex-row h-full ">
-              <div className="w-1/2 h-full flex flex-col space-y-12 justify-center items-start">
+              <div className="w-full h-full flex flex-col space-y-12 justify-center items-start">
                 <h1 className="lg:text-6xl text-4xl font-bold text-white">
                   Contact Me
                 </h1>

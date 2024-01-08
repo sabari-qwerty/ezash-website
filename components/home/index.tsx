@@ -138,9 +138,6 @@ export const HomePageSwiper: FC = () => {
           <Portfolio />
         </SwiperSlide>
         <SwiperSlide>
-          <MyWorldinThreeD />
-        </SwiperSlide>
-        <SwiperSlide>
           <SectionLayout className="flex flex-col justify-center items-center space-y-16">
             <div className="font-semibold text-4xl text-white">
               Here what &apos;s my clients says

@@ -19,7 +19,7 @@ export default function RootLayout({
         </div>
         <div
           id="app"
-          className=" flex lg:hidden   w-full h-full  items-center justify-center"
+          className=" flex lg:hidden   w-full h-full  items-center justify-center bg-white"
         >
           <div className="w-[90%] h-[90%] flex justify-center items-center">
             <Image

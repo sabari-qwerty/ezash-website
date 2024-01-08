@@ -9,6 +9,7 @@ import gooogle from './svg/google.svg'
 import telegram from './svg/telegram.svg';
 import instagram from './svg/instagram.svg';
 import arow from './svg/arow.svg';
+import linkeind from './svg/linkein.svg'
 
 //  portfolio
 
@@ -32,6 +33,7 @@ export const Whatsapp = whatsapp
 export const Google = gooogle
 export const Telegram = telegram
 export const Instagram = instagram
+export const Linkein = linkeind
 
 // atom for exmple
 
