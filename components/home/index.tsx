@@ -103,7 +103,11 @@ const data = [
   },
 ];
 
-export const HomePageSwiper: FC = () => {
+interface prop {
+  className?: string;
+}
+
+export const HomePageSwiper: FC<prop> = ({ className }) => {
   const NextSlide = () => {
     // @ts-ignore
     document.querySelector(".swiper").swiper.slideNext();
@@ -128,7 +132,7 @@ export const HomePageSwiper: FC = () => {
           clickable: true,
         }}
         modules={[Mousewheel]}
-        className="mySwiper "
+        className={cn(`mySwiper ${className}`)}
       >
         <SwiperSlide>
           <HeroPage nextSlide={NextSlide} />

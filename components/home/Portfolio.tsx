@@ -51,9 +51,7 @@ export const Portfolio = () => {
     <SectionLayout className="py-16  w-full h-full  bg-[#34353A] flex justify-center items-center overflow-auto">
       <div className="mx-auto w-[90%] flex justify-center items-center flex-col space-y-8">
         <h2 className="text-white font-bold text-4xl">Portfolio </h2>
-        <p className="text-center font-light text-white text-lg">
-          I&apos;m a paragraph. Click here to add your
-        </p>
+
         <div className="grid lg:grid-cols-4  grid-cols-2 overflow-auto  py-4  gap-5">
           {data.map((data, key) => (
             <HeroCard
