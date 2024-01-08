@@ -115,7 +115,7 @@ export const HomePageSwiper: FC = () => {
     if (hash === "#portfolio") {
       NextSlide();
     }
-  }, []);
+  }, [window.location]);
 
   return (
     <>

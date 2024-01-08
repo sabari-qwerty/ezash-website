@@ -2,8 +2,6 @@ import { FC } from "react";
 import { SectionLayout } from "../sectionLayout";
 import Image from "next/image";
 import { SectionNavBar } from "../SectionNavBar";
-import { MobileSectionLayout } from "../MobileSectionLayout";
-import { MobileNav } from "../MobileNav";
 
 interface prop {
   nextSlide?: () => void;
@@ -40,27 +38,6 @@ export const HeroPage: FC<prop> = ({ nextSlide }) => {
           </div>
         </div>
       </SectionLayout>
-      <MobileSectionLayout className="parimary-color">
-        <MobileNav />
-        <div className="flex-1  w-full h-full flex flex-col justify-center items-center">
-          <div className="flex flex-col space-y-6 pt-20">
-            <h1 className="text-4xl font-semibold w-full text-left text-white">
-              Ezash
-            </h1>
-            <h2 className="lg:text-lg w-full  text-[#DBDCE0]">
-              3D Visualizer and Graphics Designer{" "}
-            </h2>
-            <button className="custom-btn btn-15 " onClick={nextSlide}>
-              PORTFOLIO
-            </button>
-          </div>
-          <div className="flex-1 w-full h-full flex justify-center items-center">
-            <div className="h-2/4">
-              <img src="/hero.png" alt="img" />
-            </div>
-          </div>
-        </div>
-      </MobileSectionLayout>
     </>
   );
 };
