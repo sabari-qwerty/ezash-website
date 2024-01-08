@@ -14,10 +14,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div id="app" className="desktop-only">
+        <div id="app" className="hidden lg:inline-block">
           {children}
         </div>
-        <div id="app" className="   w-full h-full  items-center justify-center">
+        <div
+          id="app"
+          className=" flex lg:hidden   w-full h-full  items-center justify-center"
+        >
           <div className="w-full h-full flex justify-center items-center">
             <Image
               src={"/web-mobile.png"}
