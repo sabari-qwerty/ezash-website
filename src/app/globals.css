@@ -151,28 +151,3 @@ body {
 .contain {
   object-fit: contain !important;
 }
-
-.mobile-only {
-  display: flex;
-}
-
-.desktop-only {
-  display: flex;
-}
-
-@media only screen and (max-width: 1350px) {
-  .mobile-only {
-    display: inline-block;
-  }
-  .desktop-only {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1351px) {
-  .mobile-only {
-    display: none;
-  }
-  .desktop-only {
-    display: flex;
-  }
-}

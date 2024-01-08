@@ -17,10 +17,7 @@ export default function RootLayout({
         <div id="app" className="desktop-only">
           {children}
         </div>
-        <div
-          id="app"
-          className="mobile-only   w-full h-full  items-center justify-center"
-        >
+        <div id="app" className="   w-full h-full  items-center justify-center">
           <div className="w-full h-full flex justify-center items-center">
             <Image
               src={"/web-mobile.png"}
