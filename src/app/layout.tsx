@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Image from "next/image";
 export const metadata: Metadata = {
-  title: "Ezash poortfolio",
+  title: "Ezash portfolio",
   description: "here my worke",
 };
 
