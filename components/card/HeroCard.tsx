@@ -17,7 +17,7 @@ export const HeroCard: FC<prop> = ({
   return (
     <Link
       href={url}
-      className="  w-[300px] h-[500px] bg-[#2E2F34] rounded-3xl hover:rounded-[32px] transaction hover:scale-105 transition-all  flex justify-center items-center  flex-col space-y-12 group "
+      className="  w-[300px] h-[500px] bg-[#0F0F0F] rounded-3xl hover:rounded-[32px] transaction hover:scale-105 transition-all  flex justify-center items-center  flex-col space-y-12 group "
     >
       <div className=" w-full h-full flex justify-center items-end">
         {backgroundImage}
@@ -25,7 +25,7 @@ export const HeroCard: FC<prop> = ({
       <div className=" w-full  h-full flex flex-col space-y-6">
         <div className="text-2xl font-semibold py-2 text-white">{heading}</div>
         <div className="w-full ">
-          <button className="w-3/5 border-[#FFA600] border py-2 text-[#FFA600] rounded-full group-hover:text-[#000] group-hover:bg-[#FFA600] ">
+          <button className="w-3/5 border-[#294E8F] border py-2 text-[#294E8F] rounded-full group-hover:text-[#fff] group-hover:bg-[#294E8F] ">
             View
           </button>
         </div>

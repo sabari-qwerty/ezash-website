@@ -10,7 +10,7 @@ interface prop {
 export const HeroPage: FC<prop> = ({ nextSlide }) => {
   return (
     <>
-      <SectionLayout className=" flex flex-col  ">
+      <SectionLayout className=" flex flex-col bg-[#010101]  ">
         <SectionNavBar />
         <div className="flex-1 mx-auto w-4/5 flex flex-col lg:flex-row h-full  ">
           <div className="lg:w-1/2 w-full  h-full">
@@ -19,21 +19,27 @@ export const HeroPage: FC<prop> = ({ nextSlide }) => {
                 <h1 className="lg:text-6xl text-4xl font-bold text-white text-start">
                   Ezash
                 </h1>
-                <div className="border-b-8 border-[#FFA600] w-1/5 rounded"></div>
+                <div className="border-b-8 border-[#294E8F] w-1/5 rounded"></div>
                 <h2 className="lg:text-lg w-full  text-[#DBDCE0]">
                   3D Visualizer and Graphics Designer{" "}
                 </h2>
               </div>
               <div className="w-full  flex justify-start">
-                <button className="custom-btn btn-15 " onClick={nextSlide}>
+                <button
+                  className="custom-btn btn-15  shadow-lg shadow-[#294E8F]"
+                  onClick={nextSlide}
+                >
                   PORTFOLIO
                 </button>
               </div>
             </div>
           </div>
           <div className="lg:w-1/2  h-full  flex lg:justify-end justify-center lg:items-end">
-            <div className="w-4/5">
+            {/* <div className="w-4/5">
               <Image alt="hero" src={"/hero.png"} width={550} height={700} />
+            </div> */}
+            <div className="w-full h-[90%] bg-black">
+              <Image alt="hero" src={"/000111.png"} width={550} height={700} />
             </div>
           </div>
         </div>

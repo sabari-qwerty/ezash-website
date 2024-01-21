@@ -19,7 +19,7 @@ export const HeadingWithBorder: FC<prop> = ({
       <h2 className={`text-3xl font-bold text-white ${headingClass}`}>
         {heading}
       </h2>
-      <div className="border-b-8 border-[#FFA600] w-1/4 rounded"></div>
+      <div className="border-b-8 border-[#294E8F] w-1/4 rounded"></div>
     </div>
   );
 };

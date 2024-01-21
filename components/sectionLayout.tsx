@@ -9,9 +9,7 @@ interface prop {
 export const SectionLayout: FC<prop> = ({ className, children }) => {
   return (
     <section
-      className={cn(
-        `w-full  lg:h-[100dvh] bg-[#2e2f34] desktop-only   ${className}`
-      )}
+      className={cn(`w-full  lg:h-[100dvh]  desktop-only   ${className} `)}
     >
       {children}
     </section>
