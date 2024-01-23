@@ -53,7 +53,7 @@ export const Footer: FC = () => {
   return (
     <SectionLayout
       className="w-full h-full lg:flex
-   justify-center items-center "
+   justify-center items-center bg-[#010101] "
     >
       <footer className={cn(`w-full h-full grid grid-rows-2 `)}>
         <div className="w-4/5 mx-auto h-full flex  space-x-8 items-center justify-center   ">
@@ -93,18 +93,18 @@ export const Footer: FC = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col space-y-16 justify-center items-center py-4 w-full   bg-[#34353a]">
+        <div className=" flex flex-col space-y-16 justify-center items-center py-4 w-full   bg-[#010101]">
           <div className="flex justify-center text-white items-center text-3xl font-semibold w-full">
             <h2>Ways to Contact me</h2>
           </div>
-          <div className="flex flex-col space-y-16 justify-center items-center w-full bg-[#34353a]">
+          <div className="flex flex-col space-y-16 justify-center items-center w-full bg-[#010101]">
             <div className="flex w-3/5 mx-auto  lg:justify-between  justify-center   flex-col lg:flex-row space-y-6 lg:space-y-0">
               {Contact.slice(0, 3).map((data, key) =>
                 data.link !== "#" ? (
                   <a
                     key={key}
                     href={data.link}
-                    className=" min-w-[160px] flex rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#FFA600] text-[#fff] hover:text-gray-700 "
+                    className=" min-w-[160px] flex rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#294E8F] text-[#fff] hover:text-white "
                   >
                     {data.icon && <span className="text-2xl">{data.icon}</span>}
                     <span className="text-xl">{data.label}</span>
@@ -112,7 +112,7 @@ export const Footer: FC = () => {
                 ) : (
                   <div
                     key={key}
-                    className=" min-w-[160px] flex rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#FFA600] text-[#fff] hover:text-gray-700 "
+                    className=" min-w-[160px] flex rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#294E8F] text-[#fff] hover:text-white "
                   >
                     {data.icon && <span className="text-2xl">{data.icon}</span>}
                     <span className="text-xl">{data.label}</span>
@@ -125,7 +125,7 @@ export const Footer: FC = () => {
                 data.link === "#" ? (
                   <div
                     key={key}
-                    className="flex  min-w-[160px] rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#FFA600] text-[#fff] hover:text-gray-700 "
+                    className="flex  min-w-[160px] rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#294E8F] text-[#fff] hover:text-white "
                   >
                     {data.icon && <span className="text-2xl">{data.icon}</span>}
                     <span className="text-xl">{data.label}</span>
@@ -134,7 +134,7 @@ export const Footer: FC = () => {
                   <a
                     key={key}
                     href={data.link}
-                    className=" min-w-[160px] flex rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#FFA600] text-[#fff] hover:text-gray-700 "
+                    className=" min-w-[160px] flex rounded-full justify-center items-center space-x-4  bg-[#00000017] py-2 px-4 hover:bg-[#294E8F] text-[#fff] hover:text-white "
                   >
                     {data.icon && <span className="text-2xl">{data.icon}</span>}
                     <span className="text-xl">{data.label}</span>
