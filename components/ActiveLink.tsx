@@ -15,8 +15,8 @@ export const ActiveLink: FC<prop> = ({ href = "/", lable, className }) => {
     <Link
       href={href}
       className={` ${
-        pathname === href ? "text-[#294E8F]" : "text-white"
-      }  tracking-wider text-lg font-bold hover:text-[#294E8F]  ${className}`}
+        pathname === href ? "text-[#FFA600]" : "text-white"
+      }  tracking-wider text-lg font-bold hover:text-[#FFA600]  ${className}`}
     >
       {lable}
     </Link>

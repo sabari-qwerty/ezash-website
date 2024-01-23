@@ -23,7 +23,7 @@ const page = () => {
           className="mySwiper"
         >
           <SwiperSlide className="w-full h-full">
-            <SectionLayout className="flex flex-col space-x-4   pt-10 lg:pt-0 w-full mx-auto bg-[#010101]">
+            <SectionLayout className="flex flex-col space-x-4   pt-10 lg:pt-0 w-full mx-auto">
               <SectionNavBar />
 
               <div className="mx-auto w-4/5 flex flex-col lg:flex-row-reverse h-full ">
@@ -58,7 +58,7 @@ const page = () => {
             </SectionLayout>
           </SwiperSlide>
           <SwiperSlide className="w-full h-full">
-            <SectionLayout className="flex flex-col justify-center items-center space-x-4   pt-10 lg:pt-0 w-full mx-auto bg-[#010101]">
+            <SectionLayout className="flex flex-col justify-center items-center space-x-4   pt-10 lg:pt-0 w-full mx-auto">
               <div className="w-4/5 mx-auto flex flex-col items-center justify-center space-y-8">
                 <h2 className="lg:text-6xl text-4xl font-bold text-white">
                   A Bit About Me
@@ -84,7 +84,7 @@ const page = () => {
           </SwiperSlide>
 
           <SwiperSlide className="w-full h-full">
-            <SectionLayout className="flex flex-col justify-center items-center space-x-4    w-full mx-auto bg-[#010101]">
+            <SectionLayout className="flex flex-col justify-center items-center space-x-4    w-full mx-auto">
               <About className="text-[500px]" />
             </SectionLayout>
           </SwiperSlide>
