@@ -5,7 +5,7 @@ import { SliderHeading } from "../SliderHeading";
 
 export const GameHeroPage: FC = () => {
   return (
-    <SectionLayout className=" lg:flex flex-col  bg-[#2e2f34]">
+    <SectionLayout className=" lg:flex flex-col  bg-[#010101]">
       <SectionNavBar />
       <div className="flex-1 w-[60%] mx-auto  h-full flex flex-col justify-center items-start ">
         <h1 className="lg:text-6xl text-4xl font-bold text-white flex flex-col space-y-8 w-full ">
@@ -19,7 +19,7 @@ export const GameHeroPage: FC = () => {
 
 export const GameHeroSecondPage: FC = () => {
   return (
-    <SectionLayout className=" flex flex-col relative ">
+    <SectionLayout className=" flex flex-col relative bg-[#010101]">
       <div className="flex-1 mx-auto w-full flex flex-col lg:flex-row h-full ">
         <video
           src={

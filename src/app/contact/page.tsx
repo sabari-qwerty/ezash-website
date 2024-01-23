@@ -11,7 +11,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-      <div className="w-full h-full hidden lg:inline-block">
+      <div className="w-full h-full hidden lg:inline-block ">
         <Swiper
           direction={"vertical"}
           slidesPerView={1}
@@ -24,7 +24,7 @@ const page = () => {
           className="mySwiper bg-black w-full h-full"
         >
           <SwiperSlide>
-            <SectionLayout className="w-full">
+            <SectionLayout className="w-full bg-[#010101]">
               <div className="flex flex-col space-x-4 justify-center items-center   pt-10 lg:pt-0 w-[90%] mx-atuo"></div>
               <SectionNavBar />
 

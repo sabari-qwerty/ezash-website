@@ -142,7 +142,7 @@ export const HomePageSwiper: FC<prop> = ({ className }) => {
           <Portfolio />
         </SwiperSlide>
         <SwiperSlide>
-          <SectionLayout className="flex flex-col justify-center items-center space-y-16">
+          <SectionLayout className="w-full  lg:h-[100dvh]  desktop-only flex flex-col justify-center items-center space-y-16 bg-[#010101] ">
             <div className="font-semibold text-4xl text-white">
               Here what &apos;s my clients says
             </div>
@@ -150,7 +150,7 @@ export const HomePageSwiper: FC<prop> = ({ className }) => {
               {Review.map((data, key) => (
                 <div
                   key={key}
-                  className="w-4/5 mx-auto text-white bg-[#34353a] rounded-3xl border px-6 py-8 flex flex-col space-y-3 "
+                  className="w-4/5 mx-auto text-white  rounded-3xl border px-6 py-8 flex flex-col space-y-3 bg-[#0f0f0f] "
                 >
                   <div className="flex space-x-5 items-center   ">
                     <div>{data.icon}</div>

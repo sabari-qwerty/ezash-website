@@ -6,7 +6,7 @@ import Link from "next/link";
 export const ValorunSlide: FC = () => {
   return (
     <SectionLayout>
-      <div className="w-full h-full  lg:grid grid-cols-2">
+      <div className="w-full h-full  lg:grid grid-cols-2 bg-[#010101]">
         <div className="w-full h-full  flex justify-center items-center">
           <div className="w-4/5 h-4/5  flex justify-center overflow-hidden">
             <video
