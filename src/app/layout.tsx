@@ -3,7 +3,7 @@ import "./globals.css";
 import Image from "next/image";
 export const metadata: Metadata = {
   title: "Ezash portfolio",
-  description: "here my worke",
+  description: "Here My Work",
 };
 
 export default function RootLayout({
